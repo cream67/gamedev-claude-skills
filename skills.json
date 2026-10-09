@@ -1,0 +1,78 @@
+{
+  "_comment": "Pinned third-party skill sources. install.py clones each repo at `sha` and copies the listed skill folders into ~/.claude/skills (or --dest). Bump a sha to update.",
+  "sources": [
+    {
+      "id": "roblox-brain",
+      "repo": "https://github.com/TabooHarmony/roblox-brain",
+      "sha": "38826be57ee37bcf023e9c2b85681bea3909281c",
+      "license": "MIT",
+      "skills": ["skills/*/*"]
+    },
+    {
+      "id": "awesome-gamedev-agent-skills",
+      "repo": "https://github.com/gamedev-skills/awesome-gamedev-agent-skills",
+      "sha": "d4b0e35550c55ae70bdfcab4ef5a0e94610438a9",
+      "license": "Apache-2.0",
+      "skills": [
+        "skills/godot/godot-3d-essentials",
+        "skills/godot/godot-animation",
+        "skills/godot/godot-audio",
+        "skills/godot/godot-export",
+        "skills/godot/godot-gdscript",
+        "skills/godot/godot-gdscript-headless-testing",
+        "skills/godot/godot-multiplayer",
+        "skills/godot/godot-nodes-scenes",
+        "skills/godot/godot-physics",
+        "skills/godot/godot-resources",
+        "skills/godot/godot-shaders",
+        "skills/godot/godot-signals-groups",
+        "skills/godot/godot-ui-control",
+        "skills/disciplines/game-feel",
+        "skills/disciplines/procedural-gen",
+        "skills/disciplines/game-ai",
+        "skills/disciplines/camera-systems",
+        "skills/disciplines/level-design",
+        "skills/disciplines/shader-programming",
+        "skills/disciplines/create-game-assets",
+        "skills/genres/fps-shooter",
+        "skills/genres/tower-defense",
+        "skills/genres/platformer"
+      ]
+    },
+    {
+      "id": "godot-agent-skills",
+      "repo": "https://github.com/Qb-Lab/godot-agent-skills",
+      "sha": "7f9439375bcf05f488097795d989a0a224fe6348",
+      "license": "MIT",
+      "skills": [
+        "skills/godot-scene-surgery",
+        "skills/godot-verify",
+        "skills/godot4-api-guard"
+      ]
+    },
+    {
+      "id": "blender-agent-skills",
+      "repo": "https://github.com/oh-ashen-one/blender-agent-skills",
+      "sha": "e45ebb2b4ef29eace83572f083daff94c10215a1",
+      "license": "MIT",
+      "skills": [
+        "voxel-diorama-blender",
+        "blender-staged-scene-construction",
+        "blender-mcp-isolated-sessions"
+      ]
+    },
+    {
+      "id": "blender-claude-skill",
+      "repo": "https://github.com/MartinRapcan/blender-claude-skill",
+      "sha": "964cfe73bb1d15ff5b1603c625ecf067fb8d11bc",
+      "license": "MIT",
+      "skills": ["blender"]
+    }
+  ],
+  "plugins": [
+    {
+      "id": "mcp-server-dev@claude-plugins-official",
+      "why": "Anthropic's official skills for building MCP servers (stdio, remote HTTP, MCPB, MCP Apps)."
+    }
+  ]
+}
